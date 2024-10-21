@@ -1,11 +1,6 @@
 clc
 clear all
 % Data from the ADNI (adni.loni.usc.edu).
-Y{1} = plasma_adj;
-Y{2} = csf_adj;
-Y{3} = img_vbm_adj;
-Y{4} = FSresult;
-z = BL_DX;
 X = getNormalization(X,'normalize');
 E = getNormalization(E,'normalize');
 Y{1} = getNormalization(Y{1},'normalize');
